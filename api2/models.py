@@ -56,7 +56,7 @@ class Press(BaseModel):
 
     @property
     def img(self):
-        '''这里重写了pic，返回了一个图片的全路径'''
+        '''这里重写了pic，返回了一个图片的全路径,说实话，暂时用不到'''
         return "%s%s%s" % ("http://127.0.0.1:8000/",settings.MEDIA_URL,self.pic)
 
     class Meta:
