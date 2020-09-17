@@ -22,6 +22,6 @@ from learn_drf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include("api.urls")),
-    path("api2/", include("api2.urls")),
+    path("api3/", include("api3.urls")),
     url(r'^media/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
 ]
